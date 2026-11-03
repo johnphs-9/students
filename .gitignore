@@ -1,1 +1,213 @@
+# ==========================================
+# 1. SPECIAL TOOLING & AUTOCOMPLETE
+# ==========================================
+# Supermaven / LLM context overrides
+!settings.json
+
+# AI Agents & Coding Models Context Bounds
+# (Prevents Claude Code, Codex, Cline, or Cursor from drowning in their own historical loops)
+.claude/
+.anthropic/
+.codex/
+.cline/
+.cursor/
+claude_code_output/
+*.claude-session
+memory.json
+
+# Git Configuration Safety
+# Ignore specific local git settings you don't want pushed to origin
+.git/config.local
+.git-tokens/
+
+# ==========================================
+# 2. JAVA / SPRING BOOT / JPA
+# ==========================================
+
+# Compiled class files
+*.class
+
+# Log files
+# Blueprints and packaging
+# *.jar
+# *.war
+# *.nar
+# *.ear
+# *.zip
+# *.tar.gz
+# *.rar
+# Maven build artifacts
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+# release.properties
+dependency-reduced-pom.xml
+# buildNumber.properties
+# .mvn/timing.properties
+.mvn/wrapper/.maven-wrapper.jar
+# Gradle build artifacts
+.gradle/
+!src/**/build/
+# JPA / Hibernate / H2 Database runtime cache
+.lighthouse/
+*.mv.db
+*.trace.db
+# ==========================================
+# 3. NODE.JS / REACT / VITE / NEXT.JS
+# ==========================================
+# Dependency directories
+node_modules/
+jspm_packages/
+.pnp
+.pnp.js
+# Vite / Next.js build and distribution outputs
+dist/
+out/
+.next/
+.vercel
+.turbo
+# Cache directories
+.eslintcache
+.stylelintcache
+.tsbuildinfo
+.next/cache/
+# ==========================================
+# 4. SENSITIVE CREDENTIALS & LOCAL ENV
+# ==========================================
+# Application secrets, JWT private keys, and environment tokens
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.jks
+*.p12
+# ==========================================
+# 5. IDE, TEXT EDITOR & OS (SYSTEM LEVEL)
+# ==========================================
+# VS Code
+*.code-workspace
+.history/
+# IntelliJ IDEA
+.idea/
+# macOS System Files
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+
+# Supermaven / LLM context overrides
+# AI Agents & Coding Models Context Bounds
+# (Prevents Claude Code, Codex, Cline, or Cursor from drowning in their own historical loops)
+.claude/
+.anthropic/
+.codex/
+.cline/
+.cursor/
+claude_code_output/
+*.claude-session
+memory.json
+# Git Configuration Safety
+# Ignore specific local git settings you don't want pushed to origin
+.git/config.local
+.git-tokens/
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+release.properties
+buildNumber.properties
+.mvn/timing.properties
+
+###########################################################
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code (project config tracked; personal junk stays ignored) ###
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+### Github ###
+.github/
+.github/*
+
+### Editor directories and files
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+### Python, React  ###
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+output/
+frontend/dist/
+frontend/node_modules/
+frontend/*.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+node_modules
+dist
+dist-ssr
+*.local
+
+# Local Codex-generated working files
+.codex-finalizer/
+.codex-pptx-build/
+
+
+### Application Specific ***
+.env
+.env.*
+!.env.example
+
