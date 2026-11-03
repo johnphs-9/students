@@ -76,14 +76,14 @@ jobs:
 # ==========================================
 # WORKFLOW - Run jobs in sequence
 # ==========================================
-  workflows:
-    build_test_publish:
-      jobs:
-        - build
-        - test:
-            requires:
-              - build
-        - publish:
-            context: docker-hub
-            requires:
-              - test
+workflows:
+  build_test_publish:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - publish:
+          context: docker-hub
+          requires:
+            - test
